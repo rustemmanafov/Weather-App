@@ -19,7 +19,6 @@ class DetailViewController: UIViewController {
         
         cityNameLbl.text = city
         getTodayResult(cityName: city)
-
     }
     
     func getTodayResult(cityName: String) {
@@ -38,7 +37,7 @@ class DetailViewController: UIViewController {
                             
                             let json = try JSONSerialization.jsonObject(with: incomingData, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
                             
-                            //print(json)
+                            // print(json)
                             
                             if let main = json["main"] as? NSDictionary {
                                 
